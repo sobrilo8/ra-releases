@@ -1,4 +1,12 @@
-# Ra — Windows SDR Gamma Utility
+# Ra — Free Windows Gamma Control for Gamers
+
+**Stop playing in the dark. Take control of what you see.** Whether you're exploring shadowy dungeons, navigating dark environments, or struggling to make out what's ahead, Ra gives you control over your game's gamma. Brighten dark scenes, bring out shadow details, and fine-tune your display with ready-to-use presets or custom gamma curves with instant preview. Switch settings in seconds from your Windows system tray. Free, lightweight, and distraction-free. No accounts, no subscriptions, no hassle — just a clearer view of your game.
+
+**[Download Ra for Windows (.exe) — Free](https://github.com/sobrilo8/ra-releases/releases/download/v0.4.1-net10-preview.1/Ra-Setup-v0.4.1-net10-preview.1-win-x64.exe)**
+
+[Portable ZIP](https://github.com/sobrilo8/ra-releases/releases/download/v0.4.1-net10-preview.1/Ra-v0.4.1-net10-preview.1-portable-win-x64.zip) · [Release notes and SHA-256 checksums](https://github.com/sobrilo8/ra-releases/releases/tag/v0.4.1-net10-preview.1)
+
+*Windows 10/11 x64 · SDR display gamma adjustment · Unsigned prerelease. Some games, HDR modes and drivers may override Windows gamma changes.*
 
 **Free Windows utility · Publisher display name: Vaster · Early preview**
 
@@ -27,7 +35,7 @@ Custom point coordinates are persisted to four decimal places. A curve reloaded 
 
 ## Download, integrity, installation
 
-Download an installer and its `.sha256` file from the official **Releases** section once a release has been published. Compare the installer SHA-256 with the published checksum before running it.
+Download the [current Ra 0.4.1 preview](https://github.com/sobrilo8/ra-releases/releases/tag/v0.4.1-net10-preview.1) or use the direct installer link above. The release also includes a portable ZIP and matching `.sha256` files. Compare the download SHA-256 with the published checksum before running it.
 
 Quit any running Ra normally using **Settings → Quit Ra** before installing, updating or uninstalling it. The installer normally installs per user into `%LOCALAPPDATA%\Programs\Ra`; it offers an optional desktop shortcut and post-install launch.
 
@@ -37,7 +45,7 @@ Saved preferences are local in `%LOCALAPPDATA%\Ra\state.txt` and are normally re
 
 ## Support and security
 
-See [SECURITY.md](SECURITY.md) for the private vulnerability-reporting policy. The maintainer must enable GitHub private vulnerability reporting **before** any public release.
+See [SECURITY.md](SECURITY.md) for the private vulnerability-reporting policy. Private vulnerability reporting is enabled for this public repository.
 
 ## License
 
