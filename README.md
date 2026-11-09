@@ -1,5 +1,7 @@
 # Ra — Free Windows Gamma Control for Gamers
 
+![Ra gamma controls — product illustration](assets/ra-github-banner.png)
+
 **Stop playing in the dark. Take control of what you see.** Whether you're exploring shadowy dungeons, navigating dark environments, or struggling to make out what's ahead, Ra gives you control over your game's gamma. Brighten dark scenes, bring out shadow details, and fine-tune your display with ready-to-use presets or custom gamma curves with instant preview. Switch settings in seconds from your Windows system tray. Free, lightweight, and distraction-free. No accounts, no subscriptions, no hassle — just a clearer view of your game.
 
 **[Download Ra for Windows (.exe) — Free](https://github.com/sobrilo8/ra-releases/releases/download/v0.4.1-net10-preview.1/Ra-Setup-v0.4.1-net10-preview.1-win-x64.exe)**
