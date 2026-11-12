@@ -1,56 +1,56 @@
-# Ra — Free Windows Gamma Control for Gamers
+# Ra — Free Windows Gamma Control
+
+**See more in the dark.** Adjust Windows SDR gamma from the system tray. Switch between Gamma 1.3, Gamma 1.5, your own Custom curve and Neutral.
+
+**[Download Ra 0.4.2 for Windows — Installer (.exe)](https://github.com/sobrilo8/ra-releases/releases/download/v0.4.2-net10-preview.1/Ra-Setup-v0.4.2-net10-preview.1-win-x64.exe)**
+
+[Portable ZIP](https://github.com/sobrilo8/ra-releases/releases/download/v0.4.2-net10-preview.1/Ra-v0.4.2-net10-preview.1-portable-win-x64.zip) · [Release notes & SHA-256 checksums](https://github.com/sobrilo8/ra-releases/releases/tag/v0.4.2-net10-preview.1) · [Send feedback](https://forms.gle/rtTrEG4AJ5EmLFn5A)
+
+**Free · Windows 10/11 x64 · Unsigned preview**  
+The installer and app are not digitally signed. Windows may warn or block them; respect its security protections.
 
 ![Ra gamma controls — product illustration](assets/ra-github-banner.png)
 
-**Stop playing in the dark. Take control of what you see.** Whether you're exploring shadowy dungeons, navigating dark environments, or struggling to make out what's ahead, Ra gives you control over your game's gamma. Brighten dark scenes, bring out shadow details, and fine-tune your display with ready-to-use presets or custom gamma curves with instant preview. Switch settings in seconds from your Windows system tray. Free, lightweight, and distraction-free. No accounts, no subscriptions, no hassle — just a clearer view of your game.
+## What Ra does
 
-**[Download Ra for Windows (.exe) — Free](https://github.com/sobrilo8/ra-releases/releases/download/v0.4.2-net10-preview.1/Ra-Setup-v0.4.2-net10-preview.1-win-x64.exe)**
+- **Quick presets:** Switch between Gamma 1.3, Gamma 1.5 and Neutral from the tray.
+- **Custom curve:** Drag points to preview a curve; Save, Reset or cancel your changes.
+- **One-click toggle:** Left-click the tray icon to switch between Neutral and your last active profile.
+- **Optional update checks:** Check manually or opt in to checks no more than once per 24 hours. Automatic checks are off by default; Ra never downloads or installs updates silently.
+- **Private by design:** No account, advertisements or telemetry. Display settings stay on your PC. See [Privacy](PRIVACY.md) for GitHub update checks and optional Google Forms feedback.
 
-[Portable ZIP](https://github.com/sobrilo8/ra-releases/releases/download/v0.4.2-net10-preview.1/Ra-v0.4.2-net10-preview.1-portable-win-x64.zip) · [Release notes and SHA-256 checksums](https://github.com/sobrilo8/ra-releases/releases/tag/v0.4.2-net10-preview.1)
+## Install in three steps
 
-*Windows 10/11 x64 · SDR display gamma adjustment · Unsigned prerelease. Some games, HDR modes and drivers may override Windows gamma changes.*
+1. **Download the installer** using the link above. The [portable ZIP](https://github.com/sobrilo8/ra-releases/releases/download/v0.4.2-net10-preview.1/Ra-v0.4.2-net10-preview.1-portable-win-x64.zip) is an alternative if you prefer extracting the files yourself.
+2. **Quit any running Ra** using **Settings → Quit Ra**, then run the installer if Windows permits it. The per-user installer normally installs into `%LOCALAPPDATA%\Programs\Ra`. Do not bypass Windows security warnings.
+3. **Open Ra from the system tray.** Right-click its icon to select a preset or open Settings; left-click to toggle Neutral and your last non-neutral profile.
 
-**Free Windows utility · Publisher display name: Vaster · Early preview**
+The self-contained download does not need a separate .NET installation. An optional **Start with Windows** setting is available.
 
-Ra is a lightweight Windows system-tray application that adjusts Windows SDR display gamma curves using the Windows GDI gamma-ramp API. It offers Gamma 1.3, Gamma 1.5 and a user-editable Custom curve, with Neutral to stop Ra's adjustment.
+## Compatibility and limitations
 
-**This is a binary-distribution repository.** The development source code and its Git history are not hosted here. The application is distributed under the included MIT license; that license does not require the source repository to be made public.
+Ra adjusts the Windows **GDI gamma ramp**. It is not a monitor calibration tool and does not measure physical brightness or color accuracy. Some drivers, games and display modes may override gamma changes. HDR, ICC, fullscreen-game, anti-cheat and multi-monitor behavior have not been comprehensively tested.
 
-## Requirements and limitations
+On Neutral or normal Quit, Ra attempts to restore the preceding gamma ramp **only if it still owns its last verified change**. Crashes or forced termination can prevent restoration.
 
-- Windows 10 or 11, x64, on a graphics path supporting GDI gamma ramps.
-- The downloadable self-contained build does not require a separate .NET installation.
-- Display-driver, HDR, ICC/color-management, multi-monitor, fullscreen and anti-cheat compatibility are not broadly tested.
-- Ra is not a monitor calibration tool and does not measure actual physical brightness or color accuracy.
-- Gamma changes can be overwritten by Windows, drivers or other apps; crashes or forced termination can prevent restoration.
+<details>
+<summary><strong>Technical details and file storage</strong></summary>
 
-## How to use
+- Target: Windows 10/11 x64; C# WinForms, self-contained .NET 10.
+- The installer and portable ZIP are available in the [0.4.2 release](https://github.com/sobrilo8/ra-releases/releases/tag/v0.4.2-net10-preview.1), each with a corresponding `.sha256` checksum file.
+- Gamma profile data is stored in `%LOCALAPPDATA%\Ra\state.txt`; optional automatic-update preferences in `%LOCALAPPDATA%\Ra\updates.txt`. Even the portable version writes local preferences.
+- Custom control-point coordinates are saved to four decimal places, so restored numeric values may differ slightly from full-precision previews. The visual impact has not been measured.
+- The public repository contains documentation and downloadable binaries, **not the private development source history**.
 
-- **Gamma 1.3 / 1.5:** choose a preset from the tray menu.
-- **Custom:** open Settings, drag points to preview, click Save to persist the curve, or press Escape to cancel unsaved edits.
-- **Neutral:** request restoration of the previous ramp when Ra still owns its last verified write.
-- **Left-click the tray icon:** toggle Neutral and the last non-neutral profile.
-- **Right-click the tray icon:** open presets and Settings.
-- **Start with Windows:** optional, off by default during installation.
-- **About / Updates:** manual GitHub release checks, and optional automatic checks (disabled by default, at most once every 24 hours).
-- **Send feedback:** opens a Google Form in the browser; providing a contact email is optional.
+</details>
 
-Custom point coordinates are persisted to four decimal places. A curve reloaded after restarting may therefore differ numerically from the pre-save, full-precision curve. Its visual impact has not been measured.
+## Help, privacy and security
 
-## Download, integrity, installation
-
-Download the [current Ra 0.4.2 preview](https://github.com/sobrilo8/ra-releases/releases/tag/v0.4.2-net10-preview.1) or use the direct installer link above. The release also includes a portable ZIP and matching `.sha256` files. Compare the download SHA-256 with the published checksum before running it.
-
-Quit any running Ra normally using **Settings → Quit Ra** before installing, updating or uninstalling it. The installer normally installs per user into `%LOCALAPPDATA%\Programs\Ra`; it offers an optional desktop shortcut and post-install launch.
-
-**Unsigned preview:** this release's installer and application are not digitally signed. Windows may display warnings or block execution. Respect Windows security decisions; do not disable security protections.
-
-Saved display settings remain local in `%LOCALAPPDATA%\Ra\state.txt`; optional update-check preferences use `%LOCALAPPDATA%\Ra\updates.txt`. See [PRIVACY.md](PRIVACY.md) for GitHub and Google Forms disclosures.
-
-## Support and security
-
-See [SECURITY.md](SECURITY.md) for the private vulnerability-reporting policy. Private vulnerability reporting is enabled for this public repository.
+- [What changed in 0.4.2](CHANGELOG.md)
+- [Privacy and network activity](PRIVACY.md)
+- [Private vulnerability reporting](SECURITY.md)
+- [Send feedback](https://forms.gle/rtTrEG4AJ5EmLFn5A)
 
 ## License
 
-Ra is distributed under the [MIT license](LICENSE) with the existing Ra contributors and Vaster copyright notices. The installer contains applicable license and third-party notice files for bundled Microsoft .NET components.
+Ra is distributed under the [MIT license](LICENSE), with the existing Ra contributor and Vaster copyright notices. Distribution archives include the applicable license and notice files for bundled Microsoft .NET components.
