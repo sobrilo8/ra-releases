@@ -14,4 +14,4 @@ If this option is not visible, do not assume that posting a public issue is a co
 
 ## Scope
 
-Ra is a local Windows system-tray program with no built-in accounts, telemetry or internet updater. It reads/writes Windows display gamma ramps, maintains local preferences and can optionally configure a current-user startup registry entry. It does not claim protection against untrusted local processes or display-driver faults.
+Ra is a Windows system-tray utility with no user accounts, telemetry or silent installer updater. In 0.4.2 it checks GitHub release metadata manually or when the user opts in to automatic checks, and opens a Google feedback form only after a click. It reads/writes Windows display gamma ramps, maintains local preferences and can optionally configure a current-user startup registry entry. It does not claim protection against untrusted local processes or display-driver faults.
