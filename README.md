@@ -6,8 +6,8 @@
 
 [Portable ZIP](https://github.com/sobrilo8/ra-releases/releases/download/v0.4.2-net10-preview.1/Ra-v0.4.2-net10-preview.1-portable-win-x64.zip) · [Release notes & SHA-256 checksums](https://github.com/sobrilo8/ra-releases/releases/tag/v0.4.2-net10-preview.1) · [Send feedback](https://forms.gle/rtTrEG4AJ5EmLFn5A)
 
-**Free · Windows 10/11 x64 · Unsigned preview**  
-The installer and app are not digitally signed. Windows may warn or block them; respect its security protections.
+**Free · Windows 10/11 x64 · Version 0.4.2**  
+**Note:** Ra is currently an unsigned preview release. Windows may display a security warning because the application does not yet have a digital signing certificate. Only install software from sources you trust.
 
 ![Ra gamma controls — product illustration](assets/ra-github-banner.png)
 
@@ -17,13 +17,13 @@ The installer and app are not digitally signed. Windows may warn or block them; 
 - **Custom curve:** Drag points to preview a curve; Save, Reset or cancel your changes.
 - **One-click toggle:** Left-click the tray icon to switch between Neutral and your last active profile.
 - **Optional update checks:** Check manually or opt in to checks no more than once per 24 hours. Automatic checks are off by default; Ra never downloads or installs updates silently.
-- **Private by design:** No account, advertisements or telemetry. Display settings stay on your PC. See [Privacy](PRIVACY.md) for GitHub update checks and optional Google Forms feedback.
+- **No accounts or tracking:** No account, advertisements or telemetry. Display settings stay on your PC. See [Privacy](PRIVACY.md) for GitHub update checks and optional Google Forms feedback.
 
 ## Install in three steps
 
 1. **Download the installer** using the link above. The [portable ZIP](https://github.com/sobrilo8/ra-releases/releases/download/v0.4.2-net10-preview.1/Ra-v0.4.2-net10-preview.1-portable-win-x64.zip) is an alternative if you prefer extracting the files yourself.
-2. **Quit any running Ra** using **Settings → Quit Ra**, then run the installer if Windows permits it. The per-user installer normally installs into `%LOCALAPPDATA%\Programs\Ra`. Do not bypass Windows security warnings.
-3. **Open Ra from the system tray.** Right-click its icon to select a preset or open Settings; left-click to toggle Neutral and your last non-neutral profile.
+2. **If you're updating Ra**, quit the running app using **Settings → Quit Ra** first. Then run the installer. It normally installs for your Windows user into `%LOCALAPPDATA%\Programs\Ra`.
+3. **Use Ra from the system tray.** If the icon is hidden, expand the tray's hidden icons. Right-click to select a preset or open Settings; left-click to toggle Neutral and your last non-neutral profile.
 
 The self-contained download does not need a separate .NET installation. An optional **Start with Windows** setting is available.
 
