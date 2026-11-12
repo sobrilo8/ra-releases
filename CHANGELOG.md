@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.4.2 .NET 10 preview
+
+- Added **About / Updates** with manual update checks against public GitHub releases.
+- Optional automatic release checks are disabled by default and limited to at most once per 24 hours; Ra never silently downloads or installs updates.
+- Quiet update-available indication without gameplay interruption.
+- **Send feedback** opens the external Ra Google Form; email contact is voluntary.
+- Improved the panel layout and taskbar clearance.
+- Preserved local gamma settings and conservative restoration behavior.
+
+**Validation:** installed 0.4.1 → 0.4.2 upgrade passed the owner's guarded Windows test; the packaged 0.4.2 app was also launched and checked. Clean-machine installation, uninstall and broad hardware compatibility remain unverified. Unsigned binaries.
+
+
 ## 0.4.1 .NET 10 preview
 
 - Self-contained Windows x64 preview using .NET 10.
