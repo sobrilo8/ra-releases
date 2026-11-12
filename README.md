@@ -4,9 +4,9 @@
 
 **Stop playing in the dark. Take control of what you see.** Whether you're exploring shadowy dungeons, navigating dark environments, or struggling to make out what's ahead, Ra gives you control over your game's gamma. Brighten dark scenes, bring out shadow details, and fine-tune your display with ready-to-use presets or custom gamma curves with instant preview. Switch settings in seconds from your Windows system tray. Free, lightweight, and distraction-free. No accounts, no subscriptions, no hassle — just a clearer view of your game.
 
-**[Download Ra for Windows (.exe) — Free](https://github.com/sobrilo8/ra-releases/releases/download/v0.4.1-net10-preview.1/Ra-Setup-v0.4.1-net10-preview.1-win-x64.exe)**
+**[Download Ra for Windows (.exe) — Free](https://github.com/sobrilo8/ra-releases/releases/download/v0.4.2-net10-preview.1/Ra-Setup-v0.4.2-net10-preview.1-win-x64.exe)**
 
-[Portable ZIP](https://github.com/sobrilo8/ra-releases/releases/download/v0.4.1-net10-preview.1/Ra-v0.4.1-net10-preview.1-portable-win-x64.zip) · [Release notes and SHA-256 checksums](https://github.com/sobrilo8/ra-releases/releases/tag/v0.4.1-net10-preview.1)
+[Portable ZIP](https://github.com/sobrilo8/ra-releases/releases/download/v0.4.2-net10-preview.1/Ra-v0.4.2-net10-preview.1-portable-win-x64.zip) · [Release notes and SHA-256 checksums](https://github.com/sobrilo8/ra-releases/releases/tag/v0.4.2-net10-preview.1)
 
 *Windows 10/11 x64 · SDR display gamma adjustment · Unsigned prerelease. Some games, HDR modes and drivers may override Windows gamma changes.*
 
@@ -32,18 +32,20 @@ Ra is a lightweight Windows system-tray application that adjusts Windows SDR dis
 - **Left-click the tray icon:** toggle Neutral and the last non-neutral profile.
 - **Right-click the tray icon:** open presets and Settings.
 - **Start with Windows:** optional, off by default during installation.
+- **About / Updates:** manual GitHub release checks, and optional automatic checks (disabled by default, at most once every 24 hours).
+- **Send feedback:** opens a Google Form in the browser; providing a contact email is optional.
 
 Custom point coordinates are persisted to four decimal places. A curve reloaded after restarting may therefore differ numerically from the pre-save, full-precision curve. Its visual impact has not been measured.
 
 ## Download, integrity, installation
 
-Download the [current Ra 0.4.1 preview](https://github.com/sobrilo8/ra-releases/releases/tag/v0.4.1-net10-preview.1) or use the direct installer link above. The release also includes a portable ZIP and matching `.sha256` files. Compare the download SHA-256 with the published checksum before running it.
+Download the [current Ra 0.4.2 preview](https://github.com/sobrilo8/ra-releases/releases/tag/v0.4.2-net10-preview.1) or use the direct installer link above. The release also includes a portable ZIP and matching `.sha256` files. Compare the download SHA-256 with the published checksum before running it.
 
 Quit any running Ra normally using **Settings → Quit Ra** before installing, updating or uninstalling it. The installer normally installs per user into `%LOCALAPPDATA%\Programs\Ra`; it offers an optional desktop shortcut and post-install launch.
 
 **Unsigned preview:** this release's installer and application are not digitally signed. Windows may display warnings or block execution. Respect Windows security decisions; do not disable security protections.
 
-Saved preferences are local in `%LOCALAPPDATA%\Ra\state.txt` and are normally retained after uninstall. See [PRIVACY.md](PRIVACY.md).
+Saved display settings remain local in `%LOCALAPPDATA%\Ra\state.txt`; optional update-check preferences use `%LOCALAPPDATA%\Ra\updates.txt`. See [PRIVACY.md](PRIVACY.md) for GitHub and Google Forms disclosures.
 
 ## Support and security
 
